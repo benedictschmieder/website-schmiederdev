@@ -1,7 +1,9 @@
 ---
-import { SITE } from '~/utils/config';
+import logoLight from "~/assets/images/Logo.png";
+import logoDark from "~/assets/images/Logo-inverted.png";
 ---
 
-<span class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white">
-  🚀 {SITE?.name}
+<span class="self-center ml-2 rtl:ml-0 rtl:mr-2 whitespace-nowrap pt-1 pb-1">
+  <img src={logoLight.src} alt="Company Logo" class="dark:hidden" style={{ width: '200px' }}>
+  <img src={logoDark.src} alt="Company Logo" class="hidden dark:block" style={{ width: '200px' }}>
 </span>

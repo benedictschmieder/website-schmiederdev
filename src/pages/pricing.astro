@@ -6,6 +6,7 @@ import FAQs from '~/components/widgets/FAQs.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import { getPermalink } from '~/utils/permalinks';
 
 const metadata = {
   title: 'Pricing',
@@ -28,28 +29,28 @@ const metadata = {
     subtitle="Only pay for what you need"
     prices={[
       {
-        title: 'basic',
-        subtitle: 'Optimal choice for personal use',
-        price: 29,
-        period: 'per month',
+        title: 'Stundenbasiert',
+        subtitle: 'Optimal für alltäglichen Support',
+        price: 60,
+        period: 'pro Stunde',
         items: [
           {
-            description: 'Etiam in libero, et volutpat',
+            description: 'Schnell abrufbar',
           },
           {
-            description: 'Aenean ac nunc dolor tristique',
+            description: 'Ohne Angebot',
           },
           {
-            description: 'Cras scelerisque accumsan lib',
+            description: 'Remote oder Vor-Ort',
           },
           {
-            description: 'In hac habitasse',
-          },
+            description: 'Monatliche Abrechnung',
+          }
         ],
         callToAction: {
           target: '_blank',
-          text: 'Get started',
-          href: '#',
+          text: 'Anfrage',
+          href: getPermalink('/contact'),
         },
       },
       {
@@ -80,7 +81,7 @@ const metadata = {
           href: '#',
         },
         hasRibbon: true,
-        ribbonTitle: 'popular',
+        ribbonTitle: 'Loooool',
       },
       {
         title: 'premium',
